@@ -11,15 +11,15 @@ Tabris uses the same basic module system as Node.js but does not support npm mod
 * path [npm package](https://www.npmjs.com/package/path)
 * url [npm package](https://www.npmjs.com/package/url)
 
-And while your at it install the Tabris Cli locally,
+Install the Tabris Cli locally.
 
 ```sh
 npm i tabris-cli
 ```
 
-and the [Tabris.js Developer App](https://docs.tabris.com/latest/developer-app.html).
+Install the [Tabris.js Developer App](https://docs.tabris.com/latest/developer-app.html) on your mobile device.
 
-You now should have everything needed to compile and run this project. The Qooxdoo compiler uses a loader template tailored for the Tabris.js runtime. Below is an exerpt from the project's compile.json file.
+You now should have everything needed to compile and run this project. The Qooxdoo compiler uses a loader template tailored for the Tabris.js runtime. Below is an exerpt from the project's compile.json file showing where the boot loader temple is stored.
 
 ```json
 "applications": [
