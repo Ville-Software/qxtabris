@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="sqville.qxtabris" version="0.1.0">
+  <name>Qxtabris</name>
+  <description>
+    An example Qooxdoo plus Tabris.js App
+  </description>
+  <author email="sqville@gmail.com">
+    Chris Eskew
+  </author>
+  <preference name="EnableDeveloperConsole" value="$IS_DEBUG" />
+</widget>

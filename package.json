@@ -1,0 +1,17 @@
+{
+  "main": "compiled/source/qxtabris/index.js",
+  "private": true,
+  "scripts": {
+    "test": "eslint .",
+    "start": "tabris serve -a"
+  },
+  "dependencies": {
+    "@qooxdoo/framework": "^7.9.2",
+    "path": "^0.12.7",
+    "tabris": "~3.10.0",
+    "url": "^0.11.4"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.1"
+  }
+}
