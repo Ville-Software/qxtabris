@@ -6,7 +6,7 @@ qxtabris is a [Qooxdoo](https://qooxdoo.org/), server application that illustrat
 
 ### Qooxdoo's boot loader for Tabris.js
 
-Tabris uses the same basic module system as Node.js but does not support npm modules installed globally ([Referrence](https://docs.tabris.com/latest/modules.html)). Therefore, the following Node.js features must be installed as local modules:
+Tabris uses the same basic module system as Node.js but does not support npm modules installed globally ([Referrence](https://docs.tabris.com/latest/modules.html)). Therefore, the following Node.js features used by the Qooxdoo compiler must be installed as local modules:
 
 * path [npm package](https://www.npmjs.com/package/path)
 * url [npm package](https://www.npmjs.com/package/url)
