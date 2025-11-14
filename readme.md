@@ -19,7 +19,7 @@ npm i tabris-cli
 
 Install the [Tabris.js Developer App](https://docs.tabris.com/latest/developer-app.html) on your mobile device.
 
-You now should have everything needed to compile and run this project. The Qooxdoo compiler uses a loader template tailored for the Tabris.js runtime. Below is an exerpt from the project's compile.json file showing where the boot loader temple is stored.
+You now should have everything needed to compile and run this project. The Qooxdoo compiler uses a loader template tailored for the Tabris.js runtime [Reference](https://docs.tabris.com/latest/runtime.html). Below is an exerpt from the project's compile.json file showing where the boot loader temple is stored.
 
 ```json
 "applications": [
