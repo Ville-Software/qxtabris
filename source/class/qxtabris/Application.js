@@ -9,8 +9,6 @@
 
 ************************************************************************ */
 
-const {contentView} = require('tabris');
-
 /**
  * This is the main application class
  * @ignore($)
@@ -32,20 +30,20 @@ qx.Class.define("qxtabris.Application", {
   members: {
     main() {
 
-      const QxButton = new ville.tabris.Button({id: 'button1'});
-      const qxtextview = new ville.tabris.TextView({id: 'textview1'});
+      const QxButton1 = new ville.tabris.Button({id: 'button1'});
+      const QxTextView1 = new ville.tabris.TextView({id: 'textview1'});
 
-      //onSelect: () => $('#textview1').only().text = 'Env Info: ' + tabris.device.name
-      QxButton.Widget.on('select', () => {
-        $('#textview1').only().text = 'Qx message: ' + this.getQxMessage();
+      QxButton1.Widget.on('select', () => {
+        $('#textview1').only().text = 'Qx Message: ' + this.getQxMessage();
       });
 
-      // Need to give the Tabris contentView widget Tabris widgets and NOT Qx objects
-      contentView.append(
-          QxButton.Widget,
-          qxtextview.Widget
+      // Need to give the Tabris contentView widget Tabris widgets and NOT Qx object
+      tabris.contentView.append(
+          QxButton1.Widget,
+          QxTextView1.Widget
       );
 
     }
+
   }
 });

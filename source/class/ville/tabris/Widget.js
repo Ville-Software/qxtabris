@@ -6,7 +6,6 @@ qx.Class.define("ville.tabris.Widget", {
     extend: qx.core.Object,
 
     construct(attributes) {
-        //this.Widget = tabris.Widget({...attributes});
         this._attributes = attributes;
         this._nonsettableprops = ['padding'];
         this.initAppearance();
@@ -39,20 +38,20 @@ qx.Class.define("ville.tabris.Widget", {
 
         _applyAppearance(value) {
             if (value) {
-                if (value in ville.Appearance) {
+                if (value in ville.tabris.theme.Appearance) {
                     let firstlevel = null;
                     let secondlevel = null;
                     let baselevel = null;
-                    const appearance = ville.Appearance[value];
+                    const appearance = ville.tabris.theme.Appearance[value];
                     if ('include' in appearance) {
-                        if (appearance.include in ville.Appearance) {
-                            firstlevel = ville.Appearance[appearance.include];
+                        if (appearance.include in ville.tabris.theme.Appearance) {
+                            firstlevel = ville.tabris.theme.Appearance[appearance.include];
                             if ('include' in firstlevel) {
-                                if (firstlevel.include in ville.Appearance) {
-                                    secondlevel = ville.Appearance[firstlevel.include];
+                                if (firstlevel.include in ville.tabris.theme.Appearance) {
+                                    secondlevel = ville.tabris.theme.Appearance[firstlevel.include];
                                     if ('include' in secondlevel) {
-                                        if (secondlevel.include in ville.Appearance) {
-                                            baselevel = ville.Appearance[secondlevel.include];
+                                        if (secondlevel.include in ville.tabris.theme.Appearance) {
+                                            baselevel = ville.tabris.theme.Appearance[secondlevel.include];
                                         }
                                     }
                                 }

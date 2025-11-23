@@ -1,8 +1,8 @@
 /**
  * Appearance
- * 
+ *
  */
-qx.Class.define("ville.Appearance",
+qx.Class.define("ville.tabris.theme.Appearance",
 {
   type: "static",
 
